@@ -1,0 +1,9 @@
+Trivial min/maxheap implementation for Caterwaul. Usage is like this:
+
+sort(a, b) = a < b                      // minheap
+my_heap = new caterwaul.heap(sort)      // O(1)
+my_heap.push(1, 10, 5, 6)               // O(n lg n)
+my_heap.peek()                          // -> 1, O(1)
+my_heap.pop()                           // -> 1, O(lg n)
+my_heap.size()                          // -> 3, O(1)
+my_heap.peek()                          // -> 5, O(1)
